@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #006888;
+    --color-black: #000000;
+    --font-color-default: #000000;
+    --font-color-white: #ffffff;
+    --input-box-color: #d3d3d3;
+    --btn-height-primaty: 35px;
+    --btn-width-primary: 80px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin: 0 ;
+    padding: 18px 0;
+    width: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #ececec;
+  }
+
+  .logo,
+  .title,
+  .form {
+    display: block;
+  }
+  table tr{
+    border: 5px solid black;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 280px;
+    height: 280px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  form {
+    width: 280px;
+    padding: 5px;
+    margin: 18px 0px;
+
+  }
+
+  form .form-inp > input {
+    display: inline-block;
+    margin: 10px 0;
+    height: 30px;
+    width: 48%;
+    border: none;
+    background-color: var(--input-box-color);
+  }
+
+  .form-inp {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+  }
+
+  input[name="username"],
+  input[name="password"],
+  input[name="mobile_no"],
+  input[name="email"],
+  input[name="specialization"] {
+    text-align: center;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  .buttons {
+    width: 100%;
+    padding: 5px;
+    display: flex ;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding-left: 14em;
+
+  }
+
+  .buttons input {
+    cursor: pointer;
+    margin-top: 18px;
+    width: var(--btn-width-primary);
+    height: var(--btn-height-primaty);
+    background-color: white;
+    color: #83B1BE;
+    font-weight: bold;
+    border-color: #83B1BE;
+    border-color: 10px;
+    border-radius: 0;
+    transition: background-color 0.5s ease-out;
+  }
+
+  .buttons input:hover {
+    background-color: #008fbb;
+  }
+
+  .buttons input:active,
+  .buttons input:focus {
+    border-radius: 0px;
+    outline: none;
+  }
+
+  .forget-password {
+    margin-top: 80px;
+  }
+
+  .forget-password a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  @media screen and (max-width: 376px) {
+    .container {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0px 0px 10px 0px;
+    }
+
+    .forget-password {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    .container {
+      margin: 18px auto;
+      padding: 8px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px #a7a7a7;
+    }
+
+    form {
+      margin: 8px auto;
+      padding: 0px;
+    }
+
+    .title {
+      margin-bottom: 0px;
+    }
+
+    .forget-password {
+      margin: 30px 0px 15px 0px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .container {
+      margin: 25px auto;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 15px #a7a7a7;
+    }
+
+    .forget-password {
+      margin: 50px 0px 25px 0px;
+    }
+  }
+  .doctor{
+      display: inline-block;
+      border: 10px solid #006888;
+      width: 100%;
+      height: 3.5 em;
+      text-align: center;
+
+  }
+
+  .gender div
+  {
+      display: inline-block;
+      border: 1px solid grey;
+      border-radius: 3px;
+      padding: 5px 8px;
+  }
+  .specialization {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .specialization input {
+      height: 30px;
+    border-bottom: 1px solid black !important;
+    border: none;
+    border-radius: 2px;
+    background-color: lightgrey;
+  }
+
+
+   .sub-continer{
+       display: flex;
+       justify-content: space-between;
+
+   }
+   .sub-continer div{
+        margin-top: 5em ;
+        padding: 20px;
+    }
+   .box{
+    background-color: #83B1BE;
+    flex-basis: 40%;
+    }
+
+
+
